@@ -28,6 +28,7 @@ func main() {
 
 	cmds.register("list", handlerList)
 	cmds.register("add", handlerAdd)
+	cmds.register("done", handlerDone)
 
 	if len(os.Args) < 2 {
 		log.Fatal("Usage: cli <command> [args...]")
